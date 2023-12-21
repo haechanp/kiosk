@@ -1,0 +1,120 @@
+body {
+  margin: 0;
+  font-family: 'Arial', sans-serif;
+}
+
+#kiosk-container {
+  max-width: 600px;
+  margin: 50px auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  background-color: #f8f8f8;
+}
+
+#language-buttons {
+      text-align: right;
+      margin-bottom: 10px;
+    }
+
+    #language-buttons button {
+      margin-right: 5px;
+      cursor: pointer;
+      border: none;
+      padding: 5px 10px;
+      border-radius: 5px;
+      background-color: #5bc0de;
+      color: #fff;
+    }
+
+.menu-item {
+  display: inline-block;
+  width: 48%;
+  margin: 1%;
+  position
+  : relative;
+}
+
+.product-image {
+width: 100%;
+height: auto;
+cursor: pointer;
+margin-bottom: 10px;
+}
+
+.menu-item[data-product="아도라포도"] .product-image {
+width: 30%; /* 조절할 크기로 변경하세요 */
+height: auto;
+}
+
+.product-info {
+position: absolute;
+bottom: 0;
+left: 0;
+width: 100%;
+background-color: rgba(255, 255, 255, 0.8);
+padding: 10px;
+text-align: center;
+}
+
+#order-summary {
+margin-top: 20px;
+background-color: #fff;
+padding: 20px;
+border-radius: 10px;
+box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#order-summary h2 {
+color: #333;
+}
+
+#order-list {
+list-style-type: none;
+padding: 0;
+}
+
+.order-item {
+margin-bottom: 10px;
+display: flex;
+justify-content: space-between;
+align-items: center;
+padding: 10px;
+border: 1px solid #ddd;
+border-radius: 5px;
+}
+
+.order-item span {
+flex-grow: 1;
+margin-right: 10px;
+}
+
+.decrease-button {
+cursor: pointer;
+background-color: #d9534f;
+color: #fff;
+border: none;
+padding: 5px 10px;
+border-radius: 5px;
+}
+
+.quantity-buttons {
+display: flex;
+align-items: center;
+}
+
+.quantity-button {
+margin: 0 5px;
+cursor: pointer;
+background-color: #5bc0de;
+color: #fff;
+border: none;
+padding: 5px 10px;
+border-radius: 5px;
+}
+
+#total-price {
+font-weight: bold;
+font-size: 16px;
+color: #5bc0de;
+}

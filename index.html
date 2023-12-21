@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <title>탕후루 주문 키오스크</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+  <script src="scripts.js"></script>
+  <style></style>
+</head>
+<body>
+  <div id="kiosk-container">
+    <div id="language-buttons">
+      <button onclick="changeLanguage('ko')">한국어</button>
+      <button onclick="changeLanguage('en')">English</button>
+      <button onclick="changeLanguage('ja')">日本語</button>
+    </div>
+    
+    <h1 id="kiosk-title">하루탕후루</h1>
+
+
+    <div class="menu-item" data-price="3000">
+      <img src="strawberry.jpg" alt="딸기" class="product-image" data-product="딸기">
+      <div class="product-info">
+        <p>딸기</p>
+        <p>가격: 3000원</p>
+      </div>
+    </div>
+
+    <div class="menu-item" data-price="3000">
+      <img src="blueberry.jpg" alt="블루베리" class="product-image" data-product="블루베리">
+      <div class="product-info">
+        <p>블루베리</p>
+        <p>가격: 3000원</p>
+      </div>
+    </div>
+
+    <div class="menu-item" data-price="3000">
+      <img src="adofodo.jpg" alt="아도라포도" class="product-image" data-product="아도라포도">
+      <div class="product-info">
+        <p>아도라포도</p>
+        <p>가격: 3000원</p>
+      </div>
+    </div>
+
+    <div class="menu-item" data-price="3000">
+      <img src="stevia_mango.jpg" alt="스테비아토망고" class="product-image" data-product="스테비아토망고">
+      <div class="product-info">
+        <p>스테비아토망고</p>
+        <p>가격: 3000원</p>
+      </div>
+    </div>
+
+    <div class="menu-item" data-price="4000">
+      <img src="shine_muscat.jpg" alt="샤인머스켓" class="product-image" data-product="샤인머스켓">
+      <div class="product-info">
+        <p>샤인머스켓</p>
+        <p>가격: 4000원</p>
+      </div>
+    </div>
+
+    <div class="menu-item" data-price="4000">
+      <img src="santa.jpg" alt="산타" class="product-image" data-product="산타">
+      <div class="product-info">
+        <p>산타</p>
+        <p>가격: 4000원</p>
+      </div>
+    </div>
+
+    <div class="menu-item" data-price="4000">
+      <img src="tong_tangerine.jpg" alt="통귤" class="product-image" data-product="통귤">
+      <div class="product-info">
+        <p>통귤</p>
+        <p>가격: 4000원</p>
+      </div>
+    </div>
+
+    <!-- 주문 정보를 표시하는 영역 -->
+    <div id="order-summary">
+      <h2>주문 내역</h2>
+      <ul id="order-list"></ul>
+      <p>총 가격: <span id="total-price">0원</span></p>
+      <button id="calculate-button">계산하기</button>
+    </div>
+  </div>
+</body>
+</html>
